@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    tools:context=".FragDoanhthu" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_tungay"
+            android:layout_width="150dp"
+            android:backgroundTint="#A3A0A0"
+            android:layout_height="wrap_content"
+            android:text="Từ ngày" />
+
+        <TextView
+            android:id="@+id/txt_tungay"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_denngay"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9F9D9D"
+            android:text="Đến ngày" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="10dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_xemdoanhthu"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#AAA5A5"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="$ Xem doanh thu" />
+
+    <TextView
+        android:id="@+id/txt_doanhthu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+</LinearLayout>
