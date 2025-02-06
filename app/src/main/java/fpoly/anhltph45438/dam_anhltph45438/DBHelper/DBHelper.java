@@ -16,7 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         String tb_thuthu="create table ThuThu (maTT text primary key ,hoTen text not null,matKhau text not null)";
         db.execSQL(tb_thuthu);
-        String data_thuthu="insert into ThuThu(maTT,hoTen,matKhau) values ('tt01','Nguyễn Đức Thành','123')";
+        String data_thuthu="insert into ThuThu(maTT,hoTen,matKhau) values ('tt01','Nguyễn A','123')";
         db.execSQL(data_thuthu);
 
         String tb_thanhvien="create table Thanhvien(maTV integer primary key autoincrement,hoTen text not null,namSinh text not null)";

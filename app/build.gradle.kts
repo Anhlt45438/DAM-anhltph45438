@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "fpoly.anhltph45438.dam_anhltph45438"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "fpoly.anhltph45438.dam_anhltph45438"
