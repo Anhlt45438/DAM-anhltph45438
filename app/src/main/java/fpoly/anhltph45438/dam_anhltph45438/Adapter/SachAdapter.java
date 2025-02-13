@@ -59,12 +59,12 @@ public class SachAdapter extends ArrayAdapter<SachModel> {
             tv_loai.setText("Loại sách: "+ls.tenLoai);
             img_xoasach=v.findViewById(R.id.img_xoasach);
         }
-//        img_xoasach.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                frs.xoa(String.valueOf(sa.maSach));
-//            }
-//        });
+        img_xoasach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                frs.xoa(String.valueOf(sa.maSach));
+            }
+        });
         return v;
     }
 }

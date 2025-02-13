@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(@Nullable Context context) {
-        super(context, "QLTV",null,7);
+        super(context, "QLTV",null,12);
     }
 
     @Override
@@ -16,7 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         String tb_thuthu="create table ThuThu (maTT text primary key ,hoTen text not null,matKhau text not null)";
         db.execSQL(tb_thuthu);
-        String data_thuthu="insert into ThuThu(maTT,hoTen,matKhau) values ('tt01','Nguyễn A','123')";
+        String data_thuthu="insert into ThuThu(maTT,hoTen,matKhau) values ('tt01','Nguyễn Đức Thành','123')";
         db.execSQL(data_thuthu);
 
         String tb_thanhvien="create table Thanhvien(maTV integer primary key autoincrement,hoTen text not null,namSinh text not null)";
@@ -26,7 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         String tb_phieumuon="create table PhieuMuon(maPM integer primary key autoincrement, maTT text not null,maTV integer not null,maSach integer not null,tienThue integer not null,traSach integer not null,ngay date not null,foreign key (maTT) references ThuThu(maTT),foreign key (maTV) references ThanhVien(maTV),foreign key (maSach) references Sach(maSach))";
         db.execSQL(tb_phieumuon);
-        String data_phieuuon="insert into PhieuMuon(maPM,maTT,maTV,maSach,tienThue,traSach,ngay) values (1,'tt01',1,1,3000,1,'2/1/2024')";
+        String data_phieuuon="insert into PhieuMuon(maPM,maTT,maTV,maSach,tienThue,traSach,ngay) values (1,'tt01',1,1,3000,1,'2024-01-01')";
         db.execSQL(data_phieuuon);
 
         String tb_loaisach="create table LoaiSach(maLoai integer primary key autoincrement,tenLoai text not null)";
