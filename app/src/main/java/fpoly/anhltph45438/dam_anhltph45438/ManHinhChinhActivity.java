@@ -82,7 +82,6 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                 }else if(id==R.id.nav_Dangxuat){
                     startActivity(new Intent(getApplicationContext(), DangnhapActivity.class));
                     finish();
-
                 }else if(id==R.id.nav_Themnguoidung){
                     fr=new FragThemnguoidung();
                     tb1.setTitle("Thêm người dùng");
@@ -128,7 +127,7 @@ public class ManHinhChinhActivity extends AppCompatActivity {
         String username=thuthu.hoTen_tt;
         tv_user.setText("Welcome "+username+"!");
 
-        if(user.equalsIgnoreCase("admin")){
+        if(user.equalsIgnoreCase("tt01")){
             nv1.getMenu().findItem(R.id.nav_Themnguoidung).setVisible(true);
         }
     }
